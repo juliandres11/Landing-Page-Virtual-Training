@@ -8,11 +8,12 @@
     font-style: normal;
 }
 
+
 header {
     display: flex;
     flex-direction: column;
     background-color: #012034;
-    width: 100%;    
+    width: 100%;
 }
 
 .brand {
@@ -30,7 +31,7 @@ header {
     height: 3.5em;
 }
 
-#title-header {
+.title-header {
     color: white;
     font-size: 2em;
     color: #FF9100;
@@ -54,6 +55,7 @@ nav a {
     text-align: center;
     line-height: 4vh;
     padding: 0 1%;
+    cursor: pointer;
 }
 
 nav a:hover {
@@ -90,14 +92,14 @@ nav a:focus {
     box-shadow: 4px 4px 4px #000000;
 }
 
-#title {
+.title {
     color: #A2CADA;
     font-size: 4em;
     margin-top: 1vh;
     text-shadow: 3px 3px 3px #000000;
 }
 
-#slogan {
+.slogan {
     color: #A2CADA;
     font-size: 2em;
     margin-top: 1vh;
@@ -132,7 +134,7 @@ nav a:focus {
 
 }
 
-#services-title {
+.services-title {
     color: #A2CADA;
     font-size: 2.5em;
     margin-top: 5vh;
@@ -159,17 +161,17 @@ nav a:focus {
     border-radius: 10px;
     box-shadow: 4px 4px 4px #000000;
     width: 25vw;
-    height: 60vh;
+    height: 50vh;
 }
 
 .service p {
     padding-top: 2%;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .service-img {
     height: 30vh;
-    width: 15vw;
+    width: 60%;
 }
 
 .experiences {
@@ -180,9 +182,9 @@ nav a:focus {
     align-items: center;
 }
 
-#experiences-title {
+.experiences-title {
     color: #A2CADA;
-    font-size: 3em;
+    font-size: 2.5em;
     margin-top: 5vh;
 }
 
@@ -330,7 +332,7 @@ footer {
     width: 4.5vw;
 }
 
-.modal{
+.modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -345,7 +347,7 @@ footer {
     --transition: transform .8s
 }
 
-.modal--show{
+.modal--show {
     opacity: 1;
     pointer-events: unset;
     transition: opacity .6s;
@@ -353,7 +355,7 @@ footer {
     --transition: transform .8s .8s
 }
 
-.modal-container{
+.modal-container {
     width: 90%;
     max-width: 600px;
     max-height: 90%;
@@ -409,7 +411,7 @@ textarea {
     margin-bottom: 3vh;
 }
 
-.button-container{
+.button-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -430,7 +432,7 @@ textarea {
     width: 30%;
 }
 
-#submit-btn{
+#submit-btn {
     background-color: #FF9100;
     color: black;
 }
@@ -440,7 +442,104 @@ textarea {
     color: black;
 }
 
-#cancel-btn{
+#cancel-btn {
     background-color: #A2CADA;
     color: black;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 8vh;
+    }
+
+    #logo-header {
+        height: 5vh;
+        margin-left: 3%;
+    }
+
+    .title-header {
+        display: none;
+    }
+
+    .title {
+        font-size: 3em;
+    }
+
+    .slogan {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .register-btn{
+        font-size: 1.2em;
+    }
+
+    .register-btn:hover {
+        font-size: 1.5em;
+    }
+
+    .services{
+        height: 125vh;
+    }
+
+    .services-title{
+        font-size: 2em;
+        margin-top: 3vh;
+    }
+
+    .service-content{
+        display: grid;
+        gap: 1em;
+        grid-template-columns: 100%;
+        place-items: center;
+        margin-top: 3vh;
+    }
+
+    .service{
+        width: 70%;
+        height: 36vh;
+    }
+
+    .service p{
+        font-size: .9rem;
+    }
+
+    .service-img{
+        height: 20vh;
+        width: 60%;
+    }
+
+    .experiences{
+        height: 125vh;
+    }
+
+    .experiences-title{
+        font-size: 2em;
+        margin-top: 2vh;
+    }
+    
+    .experience-content{
+        display: grid;
+        gap: 1em;
+        grid-template-columns: 100%;
+        place-items: center;
+        margin-top: 3vh;
+    }
+
+    .experience{
+        width: 70%;
+        height: 35vh;
+    }
+
+    .experience-img{
+        height: 15vh;
+        width: 40%;
+    }
+
+    .opinion{
+        font-size: .9rem;
+    }
 }
