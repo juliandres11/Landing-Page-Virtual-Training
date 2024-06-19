@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Talent Up</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="modal" href="form.html">
 </head>
 
 <body>
@@ -15,58 +16,90 @@
             <span id="title-header">Talent Up</span>
         </div>
         <nav>
-            <a href="">Inicio</a>
-            <a href="">Servicios</a>
-            <a href="">Experiencias</a>
+            <a href="#home">Inicio</a>
+            <a onclick="goToSection('services')">Servicios</a>
+            <a onclick="goToSection('experiences')">Experiencias</a>
         </nav>
     </header>
-    <main class="home">
+    <main class="home" id="home">
         <div class="home-content">
             <img id="logo" src="resources/Logo_StartUp.jpeg" alt="logo StarUp">
             <h1 id="title">Talent Up</h1>
             <p id="slogan">"Eleva tus habilidades, potencia tu futuro."</p>
-            <button class="register-btn">Registrate</button>
+            <button type="button" class="register-btn">Registrate</button>
         </div>
     </main>
+    <section class="modal" id="form-modal">
+        <div class="modal-container">
+            <h2 class="form-title">Dejanos tu Contacto</h2>
+            <form action="">
+                <label for="name">Nombre:</label>
+                <input type="text" name="name" id="name" required>
+                <label for="lastname">Apellido:</label>
+                <input type="text" name="lastanem" id="lastname" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <label for="phone">Telefono:</label>
+                <input type="tel" name="phone" id="phone" required>
+                <label for="message">Mensaje:</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <div class="button-container">
+                    <button class="form-btn" id="submit-btn">Enviar</button>
+                <button class="form-btn" id="cancel-btn">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </section>
     <hr size="15vh" color="#27829D">
-    <section class="services">
+    <section class="services" id="services">
         <h1 id="services-title">Nuestros servicios</h1>
         <div class="service-content">
             <div class="service">
                 <img src="resources/onlineCourse.gif" alt="Cursos Online" class="service-img">
                 <h2>Cursos Online</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatem cupiditate eligendi quasi natus at laudantium earum? Nemo mollitia non facere adipisci. Dolorum tenetur impedit beatae velit accusamus aliquam repellat.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatem cupiditate eligendi
+                    quasi natus at laudantium earum? Nemo mollitia non facere adipisci. Dolorum tenetur impedit beatae
+                    velit accusamus aliquam repellat.</p>
             </div>
             <div class="service">
                 <img src="resources/learningPlatform.gif" alt="Plataformas LMS" class="service-img">
                 <h2>Plataformas LMS</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, iste quasi velit exercitationem aliquam nostrum ullam optio illo incidunt distinctio consequuntur asperiores qui deleniti hic similique et quidem? Impedit, natus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, iste quasi velit exercitationem
+                    aliquam nostrum ullam optio illo incidunt distinctio consequuntur asperiores qui deleniti hic
+                    similique et quidem? Impedit, natus.</p>
             </div>
             <div class="service">
                 <img src="resources/assessment.gif" alt="Evaluacion" class="service-img">
                 <h2>Evaluación</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, dolorem. Dolor, ducimus. Eaque, expedita numquam! Porro aliquam, nostrum beatae pariatur aspernatur iste, eaque alias aliquid, a natus enim fugiat quo.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, dolorem. Dolor, ducimus. Eaque,
+                    expedita numquam! Porro aliquam, nostrum beatae pariatur aspernatur iste, eaque alias aliquid, a
+                    natus enim fugiat quo.</p>
             </div>
         </div>
-    </section> 
-    <hr size="15vh" color="#27829D"> 
-    <section class="experiences">
+    </section>
+    <hr size="15vh" color="#27829D">
+    <section class="experiences" id="experiences">
         <h1 id="experiences-title">Experiencias</h1>
         <div class="experience-content">
             <div class="experience">
                 <img src="resources/Avatar(1).jpg" alt="Cursos Online" class="experience-img">
-                <h2>Cursos Online</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatem cupiditate eligendi quasi natus at laudantium earum? Nemo mollitia non facere adipisci. Dolorum tenetur impedit beatae velit accusamus aliquam repellat.</p>
+                <p class="opinion">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatem
+                    cupiditate eligendi quasi natus at laudantium earum?velit accusamus aliquam repellat."</p>
+                <h2 class="person">Mariana Arévalo</h2>
             </div>
             <div class="experience">
                 <img src="resources/Avatar(2).jpg" alt="Plataformas LMS" class="experience-img">
-                <h2>Plataformas LMS</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, iste quasi velit exercitationem aliquam nostrum ullam optio illo incidunt distinctio consequuntur asperiores qui deleniti hic similique et quidem? Impedit, natus.</p>
+                <p class="opinion">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, iste quasi velit
+                    exercitationem aliquam nostrum ullam optio illo incidunt distinctio consequuntur asperiores.
+                    Impedit, natus."</p>
+                <h2 class="person">Santiago Bernal</h2>
             </div>
             <div class="experience">
                 <img src="resources/Avatar(3).jpg" alt="Evaluacion" class="experience-img">
-                <h2>Evaluación</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, dolorem. Dolor, ducimus. Eaque, expedita numquam! Porro aliquam, nostrum beatae pariatur aspernatur iste, eaque alias aliquid, a natus enim fugiat quo.</p>
+                <p class="opinion">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, dolorem. Dolor,
+                    ducimus. Eaque,nostrum beatae pariatur aspernatur iste, eaque alias aliquid, a
+                    natus enim fugiat quo."</p>
+                <h2 class="person">Valentina Gómez</h2>
             </div>
         </div>
         <footer>
@@ -76,19 +109,28 @@
                     <span id="title-footer">Talent Up</span>
                 </div>
                 <div class="footer-info">
-                    <h2>Información de contacto</h2>
-                    <p>Correo:</p>
-                    <p>Telefono:</p>
-                    <p>Dirección:</p>
+                    <p class="footer-text">Email: infoclients@talentup.com</p>
+                    <p class="footer-text">Telefono: (2) 4611274</p>
                 </div>
                 <div class="footer-social">
-                    <h2>Redes sociales</h2>
-                    <a href="">Facebook</a>
-                    <a href="">Instagram</a>
-                    <a href="">Twitter</a>
+                    <div class="socialmedia">
+                        <img src="resources/facebook.png" alt="Facebook" class="socialmedia-icon">
+                        <a href="" class="socialmedia-link">Talent Up</a>
+                    </div>
+                    <div class="socialmedia">
+                        <img src="resources/instagram.png" alt="Instagram" class="socialmedia-icon">
+                        <a href="" class="socialmedia-link">Talent Up</a>
+                    </div>
+                    <div class="socialmedia">
+                        <img src="resources/linkedin.png" alt="LinkedIn" class="socialmedia-icon">
+                        <a href="" class="socialmedia-link">Talent Up</a>
+                    </div>
                 </div>
             </div>
         </footer>
+        <button type="button" id="scroll-btn"><img src="resources/up.png" alt="" id="scroll-img"
+                onclick="goToSection('home')"></button>
+        <script src="main.js"></script>
 </body>
 
 </html>

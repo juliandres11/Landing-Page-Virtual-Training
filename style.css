@@ -10,6 +10,7 @@ header {
     flex-direction: column;
     background-color: #012034;
     width: 100%;
+
 }
 
 .brand {
@@ -115,11 +116,13 @@ nav a:focus {
     border: none;
     border-radius: 30px;
     box-shadow: 2px 2px 4px #000000;
+    cursor: pointer;
 }
 
 .register-btn:hover {
     background-color: #ffb75a;
     color: black;
+    font-size: 2em;
 }
 
 .services {
@@ -164,9 +167,10 @@ nav a:focus {
 
 .service-img {
     height: 30vh;
+    width: 15vw;
 }
 
-.experiences{
+.experiences {
     background-color: #012034;
     height: 90vh;
     display: flex;
@@ -196,7 +200,7 @@ nav a:focus {
     align-items: center;
     text-align: center;
     margin: 0 2%;
-    padding: 1% 2%;
+    padding: 2%;
     background-color: #27829D;
     border-radius: 10px;
     box-shadow: 4px 4px 4px #000000;
@@ -205,7 +209,239 @@ nav a:focus {
 }
 
 .experience-img {
-    height: 30vh;
+    height: 25vh;
+    width: 12vw;
     border-radius: 100%;
     border: 5px solid #FF9100;
+}
+
+.opinion {
+    padding-top: 5%;
+}
+
+.person {
+    padding-top: 8%;
+}
+
+footer {
+    background-color: #012034;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+}
+
+.footer-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+
+#logo-footer {
+    height: 6em;
+    width: 6em;
+    border-radius: 100%;
+}
+
+#title-footer {
+    font-size: 2em;
+    font-weight: bold;
+    color: #FF9100;
+    padding-top: 5%;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    font-size: 1em;
+    color: #A2CADA;
+    padding-top: 5%;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 25vh;
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 150%;
+
+}
+
+.socialmedia-icon {
+    height: 5vh;
+    width: 2vw;
+    margin: 0 1%;
+}
+
+.socialmedia-link {
+    color: #A2CADA;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+#scroll-btn {
+    position: fixed;
+    bottom: 2%;
+    right: 1%;
+    background-color: #FF9100;
+    color: black;
+    border: none;
+    border-radius: 100%;
+    box-shadow: 2px 2px 4px #000000;
+    cursor: pointer;
+    display: none;
+}
+
+#scroll-btn:hover {
+    background-color: #ffb75a;
+    color: black;
+}
+
+#scroll-img {
+    height: 7.5vh;
+    width: 4.5vw;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #012034bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0vh);
+    --transition: transform .8s .8s
+}
+
+.modal-container{
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    border-radius: 10px;
+    padding: 3em 2.5em;
+    margin: auto;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-template-columns: 100%;
+    background-color: #27829D;
+    color: #012034;
+    transform: var(--transform);
+    transition: var(--transition);
+}
+
+.form-title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 1vh;
+    text-align: left;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    height: 5vh;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 10vh;
+    border-radius: 5px;
+    margin-bottom: 3vh;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+
+}
+
+.form-btn {
+    color: black;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 1% 2%;
+    margin-top: 2vh;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 2px 2px 4px #000000;
+    cursor: pointer;
+    width: 30%;
+}
+
+#submit-btn{
+    background-color: #FF9100;
+    color: black;
+}
+
+#submit-btn:hover {
+    background-color: #ffb75a;
+    color: black;
+}
+
+#cancel-btn{
+    background-color: #A2CADA;
+    color: black;
 }
