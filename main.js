@@ -2,25 +2,29 @@ const registerBtn = document.querySelector('.register-btn');
 const form = document.querySelector('.modal');
 const cancelForm = document.getElementById('cancel-btn');
 const submitForm = document.getElementById('submit-btn');
+const scrollBtn = document.getElementById('scroll-btn');
+
+scrollBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
 
 function goToSection(section) {
-    const sectionElement = document.getElementById(section);
-    if (sectionElement) {
-        sectionElement.scrollIntoView({ behavior: 'smooth' });
-    }
+  const sectionElement = document.getElementById(section);
+  if (sectionElement) {
+    sectionElement.scrollIntoView({ behavior: 'smooth' });
+  }
 }
 
-window.addEventListener('scroll', function() {
-    displayButton();
-  });
+window.addEventListener('scroll', function () {
+  displayButton();
+});
 
 function displayButton() {
-    if (window.scrollY > 92) {
-        console.log(window.scrollY);
-        document.getElementById('scroll-btn').style.display = 'block';
-      } else {
-        document.getElementById('scroll-btn').style.display = 'none';
-      }
+  if (window.scrollY > 92) {
+    document.getElementById('scroll-btn').style.display = 'block';
+  } else {
+    document.getElementById('scroll-btn').style.display = 'none';
+  }
 }
 
 registerBtn.addEventListener('click', (e) => {
