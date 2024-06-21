@@ -16,9 +16,15 @@
             <span class="title-header">Talent Up</span>
         </div>
         <nav>
-            <a href="#home">Inicio</a>
-            <a onclick="goToSection('services')">Servicios</a>
-            <a onclick="goToSection('experiences')">Experiencias</a>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+                <ul>
+                    <li><a href="#home" class="active">Inicio</a></li>
+                    <li><a onclick="goToSection('services')">Servicios</a></li>
+                    <li><a onclick="goToSection('experiences')">Experiencias</a></li>
+                </ul>
         </nav>
     </header>
     <main class="home" id="home">
@@ -57,17 +63,20 @@
             <div class="service">
                 <img src="resources/onlineCourse.gif" alt="Cursos Online" class="service-img">
                 <h2>Cursos Online</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatem cupiditate eligendi quasi natus at laudantium earum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatem cupiditate eligendi
+                    quasi natus at laudantium earum?</p>
             </div>
             <div class="service">
                 <img src="resources/learningPlatform.gif" alt="Plataformas LMS" class="service-img">
                 <h2>Plataformas LMS</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatem cupiditate eligendi quasi natus at laudantium earum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatem cupiditate eligendi
+                    quasi natus at laudantium earum?</p>
             </div>
             <div class="service">
                 <img src="resources/assessment.gif" alt="Evaluacion" class="service-img">
                 <h2>Evaluación</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatem cupiditate eligendi quasi natus at laudantium earum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatem cupiditate eligendi
+                    quasi natus at laudantium earum?</p>
             </div>
         </div>
     </section>
@@ -124,6 +133,7 @@
         </footer>
         <button type="button" id="scroll-btn"><img src="resources/up.png" alt="" id="scroll-img"></button>
         <script src="main.js"></script>
+        <script src="https://kit.fontawesome.com/4acb9baec3.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

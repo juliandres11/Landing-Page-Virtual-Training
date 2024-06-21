@@ -6,12 +6,14 @@
     box-sizing: border-box;
     font-family: "Zen Dots", sans-serif;
     font-style: normal;
+    text-decoration: none;
+    list-style: none;
 }
 
 
 header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: #012034;
     width: 100%;
 }
@@ -19,7 +21,6 @@ header {
 .brand {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     background-color: #012034;
     width: 100%;
@@ -29,6 +30,7 @@ header {
 #logo-header {
     border-radius: 100%;
     height: 3.5em;
+    margin-right: 1%;
 }
 
 .title-header {
@@ -40,32 +42,46 @@ header {
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #27829D;
+    justify-content: end;
     width: 100%;
-    height: 4vh;
+    height: 15vh;
+    color: #FF9100;
+    font-size: 1.2em;
 }
 
-nav a {
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+nav a.active, a:hover {
+    background-color: #A2CADA;
     color: black;
-    text-decoration: none;
-    font-size: 1rem;
-    height: 100%;
-    text-align: center;
-    line-height: 4vh;
-    padding: 0 1%;
+    transition: .5s;
     cursor: pointer;
 }
 
-nav a:hover {
-    background-color: #A2CADA;
-    color: black;
+.checkbtn{
+    font-size: 2rem;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
 }
 
-nav a:focus {
-    background-color: #A2CADA;
-    color: black;
+#check{
+    display: none;
 }
 
 .home {
@@ -310,7 +326,6 @@ footer {
 .socialmedia-link {
     color: #A2CADA;
     font-size: 1em;
-    text-decoration: none;
 }
 
 #scroll-btn {
@@ -451,12 +466,13 @@ textarea {
     color: black;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 825px) {
     header {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         height: 10vh;
+        position: fixed;
     }
 
     #logo-header {
@@ -464,10 +480,46 @@ textarea {
         margin-left: 5vh;
     }
 
+    .checkbtn {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #012034;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    a:hover, a.active{
+        color: #FF9100;
+        background: none;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
     .logo {
         height: 10em;
         width: 10em;
-        margin-top: 5%;
+        margin-top: 20%;
     }
 
     .title-header {
@@ -583,10 +635,10 @@ textarea {
         height: 20vh;
     }
 
-    .socialmedia{
+    .socialmedia {
         padding: 2%;
     }
-    
+
     .socialmedia-icon {
         height: 4vh;
         width: 5vw;
