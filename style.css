@@ -84,7 +84,7 @@ nav a:focus {
     align-items: center;
 }
 
-#logo {
+.logo {
     height: 15rem;
     width: 15rem;
     border-radius: 100%;
@@ -162,6 +162,10 @@ nav a:focus {
     box-shadow: 4px 4px 4px #000000;
     width: 30vw;
     height: 50vh;
+}
+
+.service h2 {
+    padding-top: 2%;
 }
 
 .service p {
@@ -452,12 +456,18 @@ textarea {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        height: 8vh;
+        height: 10vh;
     }
 
     #logo-header {
-        height: 5vh;
-        margin-left: 3%;
+        height: 8vh;
+        margin-left: 5vh;
+    }
+
+    .logo {
+        height: 10em;
+        width: 10em;
+        margin-top: 5%;
     }
 
     .title-header {
@@ -465,7 +475,7 @@ textarea {
     }
 
     .title {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     .slogan {
@@ -477,17 +487,13 @@ textarea {
         font-size: 1.2em;
     }
 
-    .register-btn:hover {
-        font-size: 1.5em;
-    }
-
-    .services {
-        height: 125vh;
-    }
-
     .services-title {
         font-size: 2em;
         margin-top: 3vh;
+    }
+
+    .services {
+        height: 180vh;
     }
 
     .service-content {
@@ -495,25 +501,28 @@ textarea {
         gap: 1em;
         grid-template-columns: 100%;
         place-items: center;
-        margin-top: 3vh;
     }
 
     .service {
-        width: 70%;
-        height: 36vh;
+        width: 75%;
+        height: 50vh;
+    }
+
+    .service h2 {
+        font-size: 1.3em;
     }
 
     .service p {
-        font-size: .9rem;
+        font-size: .8rem;
     }
 
     .service-img {
-        height: 20vh;
+        height: 25vh;
         width: 60%;
     }
 
     .experiences {
-        height: 125vh;
+        height: 190vh;
     }
 
     .experiences-title {
@@ -526,20 +535,106 @@ textarea {
         gap: 1em;
         grid-template-columns: 100%;
         place-items: center;
-        margin-top: 3vh;
     }
 
     .experience {
-        width: 70%;
-        height: 35vh;
+        width: 75%;
+        height: 55vh;
     }
 
     .experience-img {
-        height: 15vh;
+        height: 20vh;
         width: 40%;
     }
 
     .opinion {
-        font-size: .9rem;
+        font-size: .8rem;
     }
+
+    .person {
+        font-size: 1.3em;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 100%;
+        place-items: center;
+    }
+
+    #logo-footer {
+        height: 5em;
+        width: 5em;
+    }
+
+    #title-footer {
+        font-size: 1.5em;
+    }
+
+    .footer-text {
+        font-size: .8em;
+    }
+
+    .footer-social {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 20vh;
+    }
+
+    .socialmedia{
+        padding: 2%;
+    }
+    
+    .socialmedia-icon {
+        height: 4vh;
+        width: 5vw;
+        margin: 0 1%;
+    }
+
+    .socialmedia-link {
+        font-size: .8em;
+    }
+
+    #scroll-btn {
+        display: block;
+    }
+
+    #scroll-img {
+        height: 5vh;
+        width: 5vw;
+    }
+
+    .modal-container {
+        padding: 2em 1.5em;
+    }
+
+    .form-title {
+        font-size: 1.5em;
+    }
+
+    label {
+        font-size: 1em;
+    }
+
+    input {
+        height: 4vh;
+    }
+
+    textarea {
+        height: 8vh;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .form-btn {
+        font-size: 1em;
+        width: 30%;
+    }
+}
+
+
 }
