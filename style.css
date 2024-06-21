@@ -127,7 +127,7 @@ nav a:focus {
 
 .services {
     background-color: #012034;
-    height: 90vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,7 +160,7 @@ nav a:focus {
     background-color: #27829D;
     border-radius: 10px;
     box-shadow: 4px 4px 4px #000000;
-    width: 25vw;
+    width: 30vw;
     height: 50vh;
 }
 
@@ -170,8 +170,8 @@ nav a:focus {
 }
 
 .service-img {
-    height: 30vh;
-    width: 60%;
+    height: 25vh;
+    width: 15vw;
 }
 
 .experiences {
@@ -207,7 +207,7 @@ nav a:focus {
     background-color: #27829D;
     border-radius: 10px;
     box-shadow: 4px 4px 4px #000000;
-    width: 25vw;
+    width: 30vw;
     height: 60vh;
 }
 
@@ -473,7 +473,7 @@ textarea {
         font-size: 1.5em;
     }
 
-    .register-btn{
+    .register-btn {
         font-size: 1.2em;
     }
 
@@ -481,16 +481,16 @@ textarea {
         font-size: 1.5em;
     }
 
-    .services{
+    .services {
         height: 125vh;
     }
 
-    .services-title{
+    .services-title {
         font-size: 2em;
         margin-top: 3vh;
     }
 
-    .service-content{
+    .service-content {
         display: grid;
         gap: 1em;
         grid-template-columns: 100%;
@@ -498,30 +498,30 @@ textarea {
         margin-top: 3vh;
     }
 
-    .service{
+    .service {
         width: 70%;
         height: 36vh;
     }
 
-    .service p{
+    .service p {
         font-size: .9rem;
     }
 
-    .service-img{
+    .service-img {
         height: 20vh;
         width: 60%;
     }
 
-    .experiences{
+    .experiences {
         height: 125vh;
     }
 
-    .experiences-title{
+    .experiences-title {
         font-size: 2em;
         margin-top: 2vh;
     }
-    
-    .experience-content{
+
+    .experience-content {
         display: grid;
         gap: 1em;
         grid-template-columns: 100%;
@@ -529,17 +529,17 @@ textarea {
         margin-top: 3vh;
     }
 
-    .experience{
+    .experience {
         width: 70%;
         height: 35vh;
     }
 
-    .experience-img{
+    .experience-img {
         height: 15vh;
         width: 40%;
     }
 
-    .opinion{
+    .opinion {
         font-size: .9rem;
     }
 }
